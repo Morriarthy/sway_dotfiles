@@ -1,0 +1,117 @@
+{
+    "layer": "top",
+    "modules-left": [ "sway/workspaces", "sway/mode", "sway/window"],
+        "modules-center": ["cpu", "memory", "disk", "sway/pacman"],
+        "modules-right": ["backlight", "custom/pacman", "pulseaudio", "network", "battery", "idle_inhibitor", "clock#time", "custom/power"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+
+    "clock#time": {
+        "interval": 1,
+        "format": "{:%H:%M:%S}",
+        "tooltip-format": "  {:%e %b %Y}", // Icon: calendar-alt
+    },
+
+    "clock#date": {
+      "interval": 10,
+      "format": "  {:%e %b %Y}", // Icon: calendar-alt
+      "tooltip-format": "{:%e %B %Y}"
+    },
+    "cpu": {
+    "interval": 10,
+    "format": "{}% ",
+    "max-length": 10
+    },
+    "memory": {
+    "interval": 10,
+    "format": "{used:0.1f} GB/{total:0.1f} GB  "
+    },
+    "disk": {
+    "interval": 30,
+    "format": "{free} free on  ",
+    "path": "/"
+    },
+    "custom/power": {
+    "format": "   ",
+    "on-cick": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#005566 --button-background=#009999 --button-border=#002b33 --border-bottom=#002b33"
+    },
+    "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      " ",
+    ],
+    "on-scroll-down": "light -A 1",
+    "on-scroll-up": "light -U 1"
+  },
+    "idle_inhibitor": {
+        "format":" TV-mode:  {icon}",
+        "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+    }
+    },
+   "network": {
+    "interface": "wlan0",
+    "format": "{ifname}",
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ifname} ",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{ifname}",
+    "tooltip-format-wifi": "UP: {bandwidthUpBits} |  DOWN> {bandwidthDownBits} | IP: {ipaddr}" ,
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+    },
+    "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol"
+    },
+    "custom/pacman": {
+    "format": "󰀼 {}",
+    "interval": 3600,
+    "exec-if": "[ $(checkupdates | wc -l) -gt 0 ]",
+    "exec": "pamac checkupdates | wc -l",
+    "on-click": "pamac-manager --updates"
+    },
+        "format": "{icon}",
+    "interval": 30,
+    "format-icons": {
+      "enabled": "󰂯",
+      "disabled": "󰂲"
+    },
+    "on-click": "blueberry",
+    "tooltip-format": "{}"
+    },
+    "custom/weather": {
+        "format": "{}",
+        //"format-alt": "{alt}: {}",
+        //"format-alt-click": "click-left",
+        "interval": 300,
+        "return-type": "json",
+        "exec": "curl -s 'https://wttr.in/Reutlingen?format=1' |jq --unbuffered --compact-output -M -R '{text:.}'",
+        "exec-if": "ping wttr.in -c1",
+        "on-click-right": "kitty --start-as fullscreen bash -ci ~/bin/wttr"
+        // "on-click-right": "alacritty -e bash -ci ~/bin/wttr"
+    }
+
+}

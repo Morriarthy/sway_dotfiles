@@ -1,0 +1,218 @@
+/*
+* Forked by Ron
+*
+********************************************
+ *░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░*
+ *░░█▀█░█░░░█░█░█▀▀░░░█░█░█░░░▀█▀░█▀▄░█▀█░░*
+ *░░█▀▀░█░░░█░█░▀▀█░░░█░█░█░░░░█░░█▀▄░█▀█░░*
+ *░░▀░░░▀▀▀░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░░▀░░▀░▀░▀░▀░░*
+ *░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░*
+ ********************************************
+ */
+
+* {
+	border: none;
+    border-radius: 4;
+	font-family: Nerd Font Hack;
+	font-size: 14px;
+	min-height: 24px;
+}
+
+window#waybar {
+	background: transparent;
+    border-radius: 4;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#window {
+    margin-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+	border-radius: 4px;
+	transition: none;
+	/*
+    color: #f8f8f2;
+	background: #282a36;
+    */
+    color: transparent;
+	background: transparent;
+}
+
+window#waybar.alacritty #window,
+window#waybar.Firefox #window,
+window#waybar.Brave #window,
+window#waybar.Navigator #window,
+window#waybar.PCSX2 #window {
+    color: #4d4d4d;
+	background: #e6e6e6;
+}
+
+#workspaces {
+	margin-top: 8px;
+	margin-left: 12px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	background: #ffffff;
+	transition: none;
+}
+
+#workspaces button {
+	transition: none;
+	color: #000000;
+	background: transparent;
+	font-size: 16px;
+}
+
+#workspaces button.focused {
+	color: #808080;
+}
+
+#workspaces button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #00ffff;
+}
+
+#disk {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	background: #282a36;
+	transition: none;
+	color: #4d4d4d;
+	background: #ffffff;
+}
+
+#window {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	background: #282a36;
+	transition: none;
+	color: #4d4d4d;
+	background: #ffffff;
+}
+
+#mpd.disconnected,
+#mpd.stopped {
+	color: #f8f8f2;
+	background: #282a36;
+}
+
+#network {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	transition: none;
+	color: #4d4d4d;
+	background: #ffffff;
+}
+
+#pulseaudio {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	transition: none;
+	color: #4d4d4d;
+	background: #ffffff;
+}
+
+#battery {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	transition: none;
+	color: #4d4d4d;
+	background: #ffffff;
+}
+
+#cpu {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	transition: none;
+	color: #4d4d4d;
+	background: #ffffff;
+}
+
+#memory {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	transition: none;
+	color: #4d4d4d;
+	background: #ffffff;
+}
+
+#clock {
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 4px;
+	transition: none;
+	color: #4d4d4d;
+	background: #ffffff;
+}
+
+#custom_power {
+    margin-top: 8px;
+    margin-left: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 0;
+    border-radius: 4px;
+    transition: none;
+    color: #4d4d4d;
+    background: #ffffff;
+}
+
+#backlight {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 8px;
+    padding-right: 8px;
+	margin-bottom: 0;
+    border-radius: 4px;
+    transition: none;
+    color: #4d4d4d;
+    background: #ffffff;
+}
+
+#idle_inhibitor {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 2px;
+    padding-right: 2px;
+    margin-bottom: 0;
+    border-radius: 4px;
+    color: #4d4d4d;
+    background: #ffffff;
+}
