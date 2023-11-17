@@ -1,6 +1,6 @@
 # sway_dotfiles
 
-This repo includes my dotfiles for sway, which I used back in 2021 and I thought I lost.
+This repo includes my dotfiles for [sway](https://github.com/swaywm/sway), which I used back in 2021 and I thought I lost.
 
 I just found a backup of the dotfiles which I though was lost and also the reason why I use pictures instead of screenshots. ;-)
 
