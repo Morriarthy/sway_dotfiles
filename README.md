@@ -1,8 +1,10 @@
 # sway_dotfiles
 
-This repo includes my dotfiles for sway, which I used back in 2021.
+This repo includes my dotfiles for sway, which I used back in 2021 and I thought I lost.
 
-I just found a backup of the dotfiles which I though was lost.
+I just found a backup of the dotfiles which I though was lost and also the reason why I use pictures instead of screenshots. ;-)
+
+
 This is how it looked on my Chewi Notebook:
 ![alt text](https://github.com/Morriarthy/sway_dotfiles/blob/452740578cf276ccb30d5368420a1525caeb04d2/screenshot/IMG_0744.JPG
 "Picture of my Chewi Infinitybook-X running sway")
