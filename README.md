@@ -2,6 +2,7 @@
 
 This repo includes my dotfiles for [sway](https://github.com/swaywm/sway), which I used back in 2021 and I thought I lost.
 
+### Sway
 I just found a backup of the dotfiles which I though was lost and also the reason why I use pictures instead of screenshots. ;-)
 
 
@@ -21,3 +22,6 @@ And I ended up with this bright white them which is pretty good to read:
 
 I will add screenshots and more details later.
 This is still WIP and I will try to reproduce my old Sway Theme.
+
+### VIM
+In case you want to use my VIM Config, please note that you will need to create some undo dirctories (./config/vim/undo).
