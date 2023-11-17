@@ -14,6 +14,7 @@ First I created black borders, because I planed then a Black AND a White Theme:
 "Picture of Sway still with the black border which was my 1st try.")
 
 But then I decided to try something different than my usual "dark" stuff.
+
 And I ended up with this bright white them which is pretty good to read:
 ![alt text](https://github.com/Morriarthy/sway_dotfiles/blob/452740578cf276ccb30d5368420a1525caeb04d2/screenshot/IMG_0002.JPG
 "Picture of Sway with the rounded white border.")
